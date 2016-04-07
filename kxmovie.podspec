@@ -7,8 +7,8 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "gxw" => "alphaguoxiongwei@gmail.com" }
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/Guoxweii/kxmovie.git",
-                     :tag => "0.0.3" }
+  #s.source       = { :git => "https://github.com/Guoxweii/kxmovie.git",
+  #                   :tag => "0.0.3" }
 
   s.source_files  = "output/kxmovie.bundle/*.*", "output/*.{h,m}"
   s.resources = "output/kxmovie.bundle/*.png"
