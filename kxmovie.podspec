@@ -10,11 +10,11 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Guoxweii/kxmovie.git",
                      :tag => "0.0.3" }
 
-  s.source_files  = "output", "output/*.{h,m}"
+  s.source_files  = "output/kxmovie.bundle/*.*", "output/*.{h,m}"
   s.resources = "output/kxmovie.bundle/*.png"
   s.public_header_files = "output/*.h"
 
   s.frameworks = "MediaPlayer", "CoreAudio", "AudioToolbox", "Accelerate", "QuartzCore", "OpenGLES"
   s.ios.libraries = "z", "iconv"
-  s.vendored_libraries = "output/libkxmovie.a", "output/libavcodec.a", "output/libavformat.a", "output/libavutil.a", "output/libswscale.a", "output/libswresample.a"
+  #s.vendored_libraries = "output/libkxmovie.a", "output/libavcodec.a", "output/libavformat.a", "output/libavutil.a", "output/libswscale.a", "output/libswresample.a"
 end
